@@ -1,0 +1,25 @@
+{
+  "name": "neostats-hackathon-platform",
+  "version": "1.0.0",
+  "description": "Collaborative Project Management Platform with Real-Time Sockets, RBAC, and Optimistic Concurrency Control",
+  "scripts": {
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build": "npm --prefix backend run build && npm --prefix frontend run build",
+    "test": "npm --prefix backend run test:rbac && npm --prefix backend run test:realtime",
+    "prisma:migrate": "npm --prefix backend run prisma:migrate",
+    "prisma:seed": "npm --prefix backend run prisma:seed"
+  },
+  "keywords": [
+    "real-time",
+    "socket.io",
+    "nextjs",
+    "express",
+    "postgresql",
+    "prisma",
+    "rbac",
+    "concurrency-control"
+  ],
+  "author": "NeoStats Hackathon Participant",
+  "license": "ISC"
+}
